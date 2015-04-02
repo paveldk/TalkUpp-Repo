@@ -1,0 +1,12 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <Label text="Tap the button" cssClass="title" />
+    <ListView items="{{ menuItems }}" isScrollings="true" itemTap="menuItemTap">
+        <ListView.itemTemplate>
+            <GridLayout columns="auto, *, auto", rows="auto, 25">
+                <Image source="" />
+                <Label text="{{ title }}" textWrap="true" colSpan="2" minHeight="50" />
+                <Image source="" />
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>

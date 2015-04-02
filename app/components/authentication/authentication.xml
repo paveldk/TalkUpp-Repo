@@ -1,0 +1,44 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <StackLayout cssClass="page">
+        <StackLayout visibility="{{ isLoginVisible }}">
+            <Label text="Username" cssClass="label" />
+            <Border borderWidth="1" borderColor="#ccc">
+                <TextField text="{{ username }}" cssClass="input" />
+            </Border>
+
+            <Label text="Password" cssClass="label" />
+            <Border borderWidth="1" borderColor="#ccc">
+                <TextField text="{{ password }}" secure="true" cssClass="input" />
+            </Border>
+
+            <Button text="Sign In" tap="{{ onLogin }}" />
+            <Button text="Don't have account" tap="{{ onShowRegister }}" />
+        </StackLayout>
+
+        <StackLayout visibility="{{ isRegisterVisible }}">
+            <Label text="Username" cssClass="label" />
+            <Border borderWidth="1" borderColor="#ccc">
+                <TextField text="{{ username }}" cssClass="input" />
+            </Border>
+
+            <Label text="Email" cssClass="label" />
+            <Border borderWidth="1" borderColor="#ccc">
+                <TextField text="{{ email }}" cssClass="input" />
+            </Border>
+
+            <Label text="Password" cssClass="label" />
+
+            <Border borderWidth="1" borderColor="#ccc">
+                <TextField text="{{ password }}" secure="true" cssClass="input" />
+            </Border>
+
+            <Label text="Repeat Password" cssClass="label" />
+            <Border borderWidth="1" borderColor="#ccc">
+                <TextField text="{{ repeatPassword }}" secure="true" cssClass="input" />
+            </Border>
+
+            <Button text="Register" tap="{{ onRegister }}" />
+            <Button text="Already have account" tap="{{ onShowLogin }}" />
+        </StackLayout>
+    </StackLayout>
+</Page>

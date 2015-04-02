@@ -1,0 +1,14 @@
+Page {
+    background-color: #F7F4ED;
+}
+
+.page {
+    margin: 10px;
+}
+Label {
+    color: #55443B;
+}
+
+.input {
+    margin: 3px;
+}
