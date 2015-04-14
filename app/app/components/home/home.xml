@@ -1,0 +1,8 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <Label text="Home" cssClass="title" />
+    <ListView items="{{ menuItems }}" isScrollings="true" itemTap="menuItemTap">
+        <ListView.itemTemplate>
+            <Label text="{{ title }}" textWrap="true" colSpan="2" minHeight="50" />
+        </ListView.itemTemplate>
+    </ListView>
+</Page>
